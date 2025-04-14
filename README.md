@@ -57,7 +57,7 @@ compuni@maker224 MINGW64 ~
 $ ssh -T git@github.com
 Hi PedroZaupaUni! You've successfully authenticated, but GitHub does not provide shell access.
 
-- Foi criado após isso o arquivo algoritimo.por com aestrutura inicial de identificação de algoritimo já pronto
+- Foi criado após isso o arquivo algoritimo.por com aestrutura inicial de identificação de algoritimo já pronto. Logo apósn foi feito a declaração de senha do usuário, no qual é pedido que digite a senha.
 
 ### Jehad Alshoura
 - Como Configurou o Git? não deixe exposto sua chave.
@@ -74,6 +74,77 @@ Hi PedroZaupaUni! You've successfully authenticated, but GitHub does not provide
 ## Comandos utilizados
 Todos os comandos foram executados via terminal utilizando chave SSH:
 ### Comandos de Pedro Zaupa 
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (edit-zaupa)
+$ git add .
+warning: LF will be replaced by CRLF in algoritimo.por.
+The file will have its original line endings in your working directory
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (edit-zaupa)
+$ git status
+On branch edit-zaupa
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   algoritimo.por
+compuni@maker224 MINGW64 ~/Desktop
+$ git clone git@github.com:PedroZaupaUni/Atividade-avaliativa-git.git
+Cloning into 'Atividade-avaliativa-git'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+compuni@maker224 MINGW64 ~/Desktop
+$ cd Atividade-avaliativa-git
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.96 KiB | 83.00 KiB/s, done.
+From github.com:PedroZaupaUni/Atividade-avaliativa-git
+   508b4b6..db7c81d  main       -> origin/main
+Updating 508b4b6..db7c81d
+Fast-forward
+ README.md | 79 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 79 insertions(+)
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (main)
+$ git checkout -b edit-zaupa
+Switched to a new branch 'edit-zaupa'
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (edit-zaupa)
+$ git commit -m "Primeira parte do código feita
+> "
+[edit-zaupa 0820ef6] Primeira parte do código feita
+ 1 file changed, 21 insertions(+)
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (edit-zaupa)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (main)
+$ git merge edit-zaupa
+Updating db7c81d..0820ef6
+Fast-forward
+ algoritimo.por | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+compuni@maker224 MINGW64 ~/Desktop/Atividade-avaliativa-git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 686 bytes | 686.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:PedroZaupaUni/Atividade-avaliativa-git.git
+   db7c81d..0820ef6  main -> main
+
 
 ### Comandos de Jehad Alshoura
 
