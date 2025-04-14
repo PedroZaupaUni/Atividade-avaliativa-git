@@ -2,12 +2,12 @@
 Atividade 14/04
 
 ## Integrantes do grupo
-- Daniel Yassou
+- Daniel Yassuo
 - Jehad Alshoura
 - Pedro Zaupa 
 
 ## Objetivo
-Desenvolver colaborativamente um algoritmo em Portugol de…..
+Nosso algoritmo é um menu básico de entrada em algum aplicativo ou site.
 
 ## Etapas realizadas por cada membro
 
