@@ -154,6 +154,64 @@ To github.com:PedroZaupaUni/Atividade-avaliativa-git.git
 
 
 ### Comandos de Jehad Alshoura
+$ git pull
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.57 KiB | 83.00 KiB/s, done.
+From github.com:PedroZaupaUni/Atividade-avaliativa-git
+   db7c81d..b7a7e54  main       -> origin/main
+Updating db7c81d..b7a7e54
+Fast-forward
+ README.md      | 86 +++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ algoritimo.por | 21 ++++++++++++++
+ 2 files changed, 103 insertions(+), 4 deletions(-)
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git checkout -b edit-jehad
+Switched to a new branch 'edit-jehad'
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (edit-jehad)
+$ git add .
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (edit-jehad)
+$ git status
+On branch edit-jehad
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   algoritimo.por
+
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (edit-jehad)
+$ git commit -m "modificação jehad"
+[edit-jehad 63a8e6f] modificação jehad
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (edit-jehad)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git merge edit-jehad
+Updating b7a7e54..63a8e6f
+Fast-forward
+ algoritimo.por | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+compuni@maker37 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 444 bytes | 444.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PedroZaupaUni/Atividade-avaliativa-git.git
+   b7a7e54..63a8e6f  main -> main
+
 
 ### Comandos de Daniel Yassou
 
