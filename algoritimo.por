@@ -13,6 +13,12 @@ programa {
     escreva ("Senha correta, bem vindo de volta escolha a opçao desejada: OPÇAO1 OPÇAO2 OPÇAO3 SAIR :")
     leia(m)
 
+   
+   se (m=="SAIR"){
+   escreva("Saindo do menu!")
+   } senao escreva("Escolha novamente!")
+   
+
   }
 }
 
