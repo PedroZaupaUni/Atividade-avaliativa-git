@@ -60,9 +60,16 @@ Hi PedroZaupaUni! You've successfully authenticated, but GitHub does not provide
 - Foi criado após isso o arquivo algoritimo.por com aestrutura inicial de identificação de algoritimo já pronto. Logo apósn foi feito a declaração de senha do usuário, no qual é pedido que digite a senha.
 
 ### Jehad Alshoura
-- Como Configurou o Git? não deixe exposto sua chave.
-- Fez `git pull` após o commit de Fulano.
-- Adicionou lógica de ... 
+ $ ssh -T git@github.com
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi jehh3! You've successfully authenticated, but GitHub does not provide shell access.
+
+- fiz o git pull apos o pedro zaupa fazer a primeira fase do codigo, para incluir a minha parte do codigo.
+- modifiquei o codigo incluindo uma condição onde caso a senha esteja errada, o aplicativo emite mensagem de erro e pede a senha novamente para avançar.
  
 
 ### Daniel Yassou
