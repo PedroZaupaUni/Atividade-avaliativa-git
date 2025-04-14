@@ -73,9 +73,23 @@ Hi jehh3! You've successfully authenticated, but GitHub does not provide shell a
  
 
 ### Daniel Yassou
-- Como Configurou o Git? não deixe exposto sua chave.
-- Fez `git pull` após o commit de Ciclana.
-- Finalizou o algoritmo com lógica . . .
+compuni@maker38 MINGW64 ~ (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 1429
+
+compuni@maker38 MINGW64 ~ (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/compuni/.ssh/id_rsa (daniel.rodrigues@edu.unifil.br)
+
+compuni@maker38 MINGW64 ~ (master)
+$ clip < ~/.ssh/id_rsa.pub
+]
+compuni@maker38 MINGW64 ~ (master)
+$ ssh -T git@github.com
+Hi Daniel-Yassuo! You've successfully authenticated, but GitHub does not provide shell access.
+
+- Fiz o git pull após jehad fazer a segunda parte do código em portugol
+- Eu incluí a parte de seleção de opções e saída do menu
 
 
 ## Comandos utilizados
@@ -214,4 +228,74 @@ To github.com:PedroZaupaUni/Atividade-avaliativa-git.git
 
 
 ### Comandos de Daniel Yassou
+compuni@maker38 MINGW64 ~ (master)
+$ git clone git@github.com:PedroZaupaUni/Atividade-avaliativa-git.git
+Cloning into 'Atividade-avaliativa-git'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+compuni@maker38 MINGW64 ~ (master)
+$ cd Atividade-avaliativa-git
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.42 KiB | 39.00 KiB/s, done.
+From github.com:PedroZaupaUni/Atividade-avaliativa-git
+   63a8e6f..6ecf673  main       -> origin/main
+Updating 63a8e6f..6ecf673
+Fast-forward
+ README.md | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 58 insertions(+)
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git checkout -b edit-dani
+Switched to a new branch 'edit-dani'
+
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (edit-dani)
+$ git add .
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (edit-dani)
+$ git status
+On branch edit-dani
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   algoritimo.por
+
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (edit-dani)
+$ git commit -m "modificação Daniel"
+[edit-dani e8e03f8] modificação Daniel
+ 1 file changed, 6 insertions(+)
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (edit-dani)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git merge edit-dani
+Updating 6ecf673..e8e03f8
+Fast-forward
+ algoritimo.por | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+compuni@maker38 MINGW64 ~/Atividade-avaliativa-git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 201.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PedroZaupaUni/Atividade-avaliativa-git.git
+   6ecf673..e8e03f8  main -> main
 
