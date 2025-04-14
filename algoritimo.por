@@ -9,7 +9,10 @@ programa {
       escreva("Senha incorreta, Tente novamente: ")
       }
     }
-    
+    enquanto (S!=2268)
+    escreva ("Senha correta, bem vindo de volta escolha a opçao desejada: OPÇAO1 OPÇAO2 OPÇAO3 SAIR :")
+    leia(m)
+
   }
 }
 
